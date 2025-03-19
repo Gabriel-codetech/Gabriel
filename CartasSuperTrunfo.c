@@ -87,9 +87,16 @@
         pib_per_capita1 = pib1 / populacao1;
         printf("PIB per capita é: %.2f \n", pib_per_capita1);
 
-     
-        
 
+        printf("\nComparação de Cartas (Atributo Populacao): \n");
+      
+    if (populacao > populacao1) {
+        printf("Carta 1 ( %s ) tem maior população.\n", nome);
+    } else if (populacao1 > populacao) {
+        printf("Carta 2 ( %s ) tem maior população.\n", nome1);
+    } else {
+        printf("As duas cartas têm a mesma população.\n");
+    }
 
 
     return 0;
